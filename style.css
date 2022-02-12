@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./components/assets/images/2711233.png);
+    background-size: cover;
+}
+.nav-bar{
+    display:grid;
+    display: grid;
+    grid-template-areas: "logo logo content";
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.575);
+}
+.logo{
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    height: 4rem;
+    width: 5rem;
+}
+
+#name{
+    color: aliceblue;
+    font-size: 3.5rem;
+}
+
+.nav-content{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    grid-area: content;
+}
+
+.cart , .wishlist{
+    font-size: 2rem;
+    margin: 8px;
+    padding: 4px;
+}
+
+.query{
+    width: 40%;
+    max-width: 60%;
+    margin: 8px;
+    padding: 8px;
+}
+.signup, .login{
+    width: 6rem;
+    margin: 8px;
+    padding: 4px;
+}
