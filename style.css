@@ -1,23 +1,36 @@
+:root{
+    --primary-color:#ee2020;
+    --secondary-color:aliceblue;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    background-image: url(./components/assets/images/2711233.png);
-    background-size: cover;
+    background-image: url(./components/assets/images/bg-red.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+    color: var(--secondary-color);
 }
 .nav-bar{
+    padding: 10px;
     display:grid;
     display: grid;
-    grid-template-areas: "logo logo content";
+    grid-template-areas: "logo page content";
     height: fit-content;
-    background-color: rgba(0, 0, 0, 0.575);
+    background-color: rgba(54, 51, 51, 0.575);
 }
+
 .logo{
     grid-area: logo;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #logo{
@@ -25,9 +38,48 @@ body{
     width: 5rem;
 }
 
+@media only screen and (max-width:768px) {
+    #name {
+        display: none !important;
+    }
+}
+
+
 #name{
     color: aliceblue;
     font-size: 3.5rem;
+    color:var(--primary-color)
+}
+
+@media only screen and (max-width:768px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start !important;
+        align-items: center;
+        column-gap: 1.5rem;
+        width: 100%;
+    }
+}
+
+.menu{
+    grid-area:page;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu>span>a{
+    margin: 10px;
+    font-size: large;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.menu>span>a:hover{
+    color: grey;
 }
 
 .nav-content{
@@ -38,20 +90,21 @@ body{
     grid-area: content;
 }
 
-.cart , .wishlist{
+.cart-icon , .wishlist-icon, .user-icon{
     font-size: 2rem;
     margin: 8px;
     padding: 4px;
 }
 
+i{
+    color:var(--primary-color);
+}
+
 .query{
-    width: 40%;
+    width: 60%;
     max-width: 60%;
     margin: 8px;
     padding: 8px;
-}
-.signup, .login{
-    width: 6rem;
-    margin: 8px;
-    padding: 4px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
 }
