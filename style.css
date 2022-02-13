@@ -1,6 +1,7 @@
 :root{
     --primary-color:#ee2020;
     --secondary-color:aliceblue;
+    --bg-color:rgba(54, 51, 51, 0.575)
 }
 
 *{
@@ -9,6 +10,7 @@
     box-sizing: border-box;
 }
 body{
+    height: 100vh;
     background-image: url(./components/assets/images/bg-red.jpg);
     background-attachment: fixed;
     background-position: center center;
@@ -16,6 +18,11 @@ body{
     background-size: contain;
     background-color: black;
     color: var(--secondary-color);
+    display: grid;
+    grid-template-rows: fit-content 100% fit-content;
+    grid-template-areas: "navigation"
+    "home-content"
+    "footer";
 }
 .nav-bar{
     padding: 10px;
@@ -23,7 +30,9 @@ body{
     display: grid;
     grid-template-areas: "logo page content";
     height: fit-content;
-    background-color: rgba(54, 51, 51, 0.575);
+    background-color: var(--bg-color);
+    grid-area: navigation;
+    border:1px solid var(--primary-color);
 }
 
 .logo{
@@ -46,7 +55,7 @@ body{
 
 
 #name{
-    color: aliceblue;
+    color:var(--secondary-color);
     font-size: 3.5rem;
     color:var(--primary-color)
 }
@@ -107,4 +116,28 @@ i{
     padding: 8px;
     border: 2px solid var(--primary-color);
     border-radius: 5px;
+}
+
+.home-page-content{
+    height:100%;
+    padding: 10px;
+    grid-area: home-content;
+    border: 1px solid var(--primary-color);
+}
+
+.home-page-img{
+    width:100%
+}
+
+.promotion-img{
+    width: 100%;
+}
+
+.home-page-footer{
+    grid-area: footer;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-end;
 }
