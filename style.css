@@ -155,6 +155,10 @@ i{
     border-top: 1px solid var(--primary-color);
 }
 
+.products-title{
+    font-family:Agency ;
+}
+
 .home-products{
     display: flex;
     flex-wrap: wrap;
@@ -165,6 +169,7 @@ i{
 }
 .vertical-card{ 
     margin-top: 2rem;
+    background-color: var(--secondary-color);
 }
 
 .card-badge{
