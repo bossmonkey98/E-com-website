@@ -1,0 +1,42 @@
+.home-page-content{
+    display: grid;
+    grid-template-columns: 17rem 3fr;
+    grid-template-areas: "filters-menu products-list";
+}
+
+.filters{
+    cursor: context-menu;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding:3rem;
+    border-right: 1px solid var(--primary-color);
+}
+
+.clear{
+    margin-left: 6rem;
+    font-weight: 600;
+}
+
+.prices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul>span{
+    margin-left: 10px;
+}
+
+ul{
+    margin: 10px;
+}
+
+.product-list{
+    padding: 10px;
+}
+.vertical-card{
+    width: 15rem;
+    height: 25rem;
+}
