@@ -1,7 +1,7 @@
 :root{
-    --primary-color:#ee2020;
+    --primary-color:red;
     --secondary-color:rgb(245, 245, 245);
-    --bg-color:rgba(54, 51, 51, 0.575)
+    --bg-color:rgba(37, 37, 37, 0.589);
 }
 
 *{  
@@ -10,7 +10,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+h1{
+    color: var(--primary-color);
+}
+
 body{
+    cursor: context-menu;
     scroll-behavior:smooth;
     height: 100vh;
     background-image: url(./components/assets/images/bg-red.jpg);
@@ -170,6 +176,7 @@ i{
 .vertical-card{ 
     margin-top: 2rem;
     background-color: var(--secondary-color);
+    cursor: pointer;
 }
 
 .card-badge{
@@ -196,6 +203,7 @@ i{
 }
 
 .subscribe{
+    color: var(--primary-color);
     margin-top:3rem;
     margin-bottom: 1rem;
     width: 100%;
