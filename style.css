@@ -167,14 +167,14 @@ i{
 
 .home-products{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction:column;
     flex-direction: row;
-    flex-grow: inherit;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .vertical-card{ 
-    margin-top: 2rem;
+    flex-grow: 1;
+    max-width: 17rem;
+    margin: 10px;
     background-color: var(--secondary-color);
     cursor: pointer;
 }

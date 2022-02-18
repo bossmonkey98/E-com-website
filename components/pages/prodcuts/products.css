@@ -34,9 +34,5 @@ ul{
 }
 
 .product-list{
-    padding: 10px;
-}
-.vertical-card{
-    width: 15rem;
-    height: 25rem;
+    margin: 1rem;
 }
