@@ -13,6 +13,7 @@
 
 h1{
     color: var(--primary-color);
+    font-size: 3rem;
 }
 
 body{
@@ -140,7 +141,6 @@ i{
     height:100%;
     grid-area: home-content;
 }
-
 .home-page-img{
     width:100%
 }
@@ -167,9 +167,8 @@ i{
 
 .home-products{
     display: flex;
-    flex-direction:column;
-    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .vertical-card{ 
     flex-grow: 1;
