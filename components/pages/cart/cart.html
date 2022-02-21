@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://apexui.netlify.app/main.css">
     <link rel="stylesheet" href="../../../style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <meta charset="UTF-8">
@@ -13,8 +15,8 @@
 <body>
     <nav class="nav-bar">
         <div class="logo">
-            <span><img id="logo" src="../../assets/logo/apex-legends-symbol-white.png" alt="logo"></span>
-            <span id="name">pex Store</span>
+            <span><img id="store-logo" src="../../assets/logo/apex-legends-symbol-white.png" alt="logo"></span>
+            <span id="store-name">pex Store</span>
         </div>
         <div class="menu">
             <span><a href="../../../index.html">Home</a></span><span>
@@ -34,14 +36,58 @@
                 </a>
             </div>
             <div class="cart-icon">
-                <a href="cart.html">
-                    <i class="bi bi-cart-fill"></i>
+                <a href=".cart.html">
+                    <i class="bi bi-cart"></i>
                 </a>
             </div>
         </div>
     </nav>
-    <div>
-
+    <div class="home-page-content">
+        <div class="cart-products">
+            <h1 style="margin:1rem;">YOUR CART</h1>
+            <div class="cart-item">
+                <img class="item-img" src="../../assets/images/bottle.webp" alt="#">
+                <div class="cart-item-content">
+                    Apex Logo Premium Metal Bottle
+                    <div><span>-</span><input class="item-input" type="number" value="1"><span>+</span>
+                    </div>
+                    <P><strong>Price: $100</strong></P>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img class="item-img" src="../../assets/images/bottle.webp" alt="#">
+                <div class="cart-item-content">
+                    Apex Logo Premium Metal Bottle
+                    <div><span>-</span><input class="item-input" type="number" value="1"><span>+</span>
+                    </div>
+                    <P><strong>Price: $100</strong></P>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img class="item-img" src="../../assets/images/bottle.webp" alt="#">
+                <div class="cart-item-content">
+                    Apex Logo Premium Metal Bottle
+                    <div><span>-</span><input class="item-input" type="number" value="1"><span>+</span>
+                    </div>
+                    <P><strong>Price: $100</strong></P>
+                </div>
+            </div>
+        </div>
+        <div class="bill">
+            <h2>CART TOTAL</h2>
+            <div><p><strong>ITEMS</strong></p><span>1</span></div>
+            <div><p><strong>Price</strong></p><span>$100</span></div>
+            <div><p><strong>GST</strong></p><span>10%</span></div>
+            <div><p><strong>Total</strong></p><span>$110</span></div>
+            <button class="cart-btn">CHECKOUT</button>
+        </div>
     </div>
+    <footer class="home-page-footer">
+        <div><img id="store-logo" src="../../assets/logo/apex-legends-symbol-white.png" alt="logo"></div>
+        <p>Made with <i class="bi bi-heart-fill"></i> by <strong>BOSSMONKEY</strong> </p>
+        <div class="social-icons">
+            <span><i class="bi bi-instagram"></i></span><span><i class="bi bi-discord"></i></span><span><i class="bi bi-youtube"></i></span>
+        </div>
+    </footer>
 </body>
 </html>

@@ -2,6 +2,7 @@
     --primary-color:red;
     --secondary-color:rgb(245, 245, 245);
     --bg-color:rgba(37, 37, 37, 0.589);
+    --bg-colour:rgba(37, 37, 37, 0.589);
 }
 
 *{  
@@ -13,7 +14,7 @@
 
 h1{
     color: var(--primary-color);
-    font-size: 3rem;
+    font-size: 3rem !important;
 }
 
 body{
@@ -180,6 +181,7 @@ i{
 
 .card-badge{
     background-color: var(--primary-color);
+    color: aliceblue;
     top: 15px;
     left: 15px;
     font-weight: 600;
