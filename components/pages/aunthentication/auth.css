@@ -39,6 +39,11 @@
     color: black;
     cursor: pointer;
 }
+.btn:hover{
+    border:2px solid var(--primary-color);
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+}
 
 .sign-up{
     color:tomato;
